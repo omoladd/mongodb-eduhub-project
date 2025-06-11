@@ -1,0 +1,1302 @@
+{
+  "users": [
+    {
+      "_id": "ObjectId('42f0b348-945c-4a4a-90cd-a3af345b208a')",
+      "userId": "USR60F95B",
+      "email": "user0@eduhub.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "role": "instructor",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a instructor bio.",
+        "avatar": "https://avatar.com/user0",
+        "skills": [
+          "HTML",
+          "MongoDB",
+          "Data Analysis"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('f13ec46d-97fc-4045-9709-71d635687b1b')",
+      "userId": "USRA9DEAD",
+      "email": "user1@eduhub.com",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "role": "instructor",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a instructor bio.",
+        "avatar": "https://avatar.com/user1",
+        "skills": [
+          "HTML",
+          "Python",
+          "JavaScript"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('de6047e7-7593-44a9-8199-e65224ef34b7')",
+      "userId": "USR8D9638",
+      "email": "user2@eduhub.com",
+      "firstName": "Jane",
+      "lastName": "Anderson",
+      "role": "instructor",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a instructor bio.",
+        "avatar": "https://avatar.com/user2",
+        "skills": [
+          "Machine Learning",
+          "Python",
+          "HTML"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('480b0e84-d578-451c-a5bf-22e5c72ac79b')",
+      "userId": "USR18EFA8",
+      "email": "user3@eduhub.com",
+      "firstName": "Jane",
+      "lastName": "Brown",
+      "role": "instructor",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a instructor bio.",
+        "avatar": "https://avatar.com/user3",
+        "skills": [
+          "Data Analysis",
+          "JavaScript",
+          "HTML"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('9cefe4d0-6cfb-4f80-a7a9-a8c0b344d8d4')",
+      "userId": "USRB79912",
+      "email": "user4@eduhub.com",
+      "firstName": "John",
+      "lastName": "Taylor",
+      "role": "instructor",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a instructor bio.",
+        "avatar": "https://avatar.com/user4",
+        "skills": [
+          "Data Analysis",
+          "HTML",
+          "JavaScript"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('3ef47b82-f383-42ee-8992-88d0f10c1015')",
+      "userId": "USR529AA3",
+      "email": "user5@eduhub.com",
+      "firstName": "Eve",
+      "lastName": "Brown",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user5",
+        "skills": [
+          "Machine Learning",
+          "JavaScript",
+          "MongoDB"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('1841d01b-a135-4d28-890d-7f920e0540e4')",
+      "userId": "USR8E2440",
+      "email": "user6@eduhub.com",
+      "firstName": "John",
+      "lastName": "Johnson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user6",
+        "skills": [
+          "HTML",
+          "Machine Learning",
+          "MongoDB"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('71aaabf3-9281-457c-a1c2-461d8c775244')",
+      "userId": "USRB250D0",
+      "email": "user7@eduhub.com",
+      "firstName": "Carol",
+      "lastName": "Johnson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user7",
+        "skills": [
+          "Data Analysis",
+          "MongoDB",
+          "Python"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('fae081a1-c076-4f3f-b7af-18c5063f7e81')",
+      "userId": "USR612BD6",
+      "email": "user8@eduhub.com",
+      "firstName": "Jane",
+      "lastName": "Wilson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user8",
+        "skills": [
+          "Python",
+          "MongoDB",
+          "HTML"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('9ffe9780-5766-4c90-a116-ae9757c8bbb7')",
+      "userId": "USR24E7BD",
+      "email": "user9@eduhub.com",
+      "firstName": "Heidi",
+      "lastName": "Davis",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user9",
+        "skills": [
+          "CSS",
+          "Python",
+          "Machine Learning"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('07bdc4a6-1ec8-470d-b4f7-79446f22ed04')",
+      "userId": "USR7646E9",
+      "email": "user10@eduhub.com",
+      "firstName": "Grace",
+      "lastName": "Doe",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user10",
+        "skills": [
+          "Machine Learning",
+          "Python",
+          "JavaScript"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('81c19d02-d041-48b3-90a0-ca3ea2109e57')",
+      "userId": "USR6DDD02",
+      "email": "user11@eduhub.com",
+      "firstName": "Carol",
+      "lastName": "Anderson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user11",
+        "skills": [
+          "CSS",
+          "MongoDB",
+          "JavaScript"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('fa97d5be-7840-4725-94b3-4b755a072a15')",
+      "userId": "USR30019B",
+      "email": "user12@eduhub.com",
+      "firstName": "Bob",
+      "lastName": "Doe",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user12",
+        "skills": [
+          "Python",
+          "HTML",
+          "Data Analysis"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('dc4fdb52-96cd-4868-b0a1-d8d42b6de192')",
+      "userId": "USRA5EDF9",
+      "email": "user13@eduhub.com",
+      "firstName": "Carol",
+      "lastName": "Doe",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user13",
+        "skills": [
+          "CSS",
+          "Data Analysis",
+          "Python"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('787b554f-a681-4d2f-a32f-d5b5989ec1a4')",
+      "userId": "USRF5A4CA",
+      "email": "user14@eduhub.com",
+      "firstName": "Eve",
+      "lastName": "Davis",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user14",
+        "skills": [
+          "Machine Learning",
+          "HTML",
+          "MongoDB"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('199275ad-4e45-4e64-a2a7-8baa6d94f610')",
+      "userId": "USRFE339F",
+      "email": "user15@eduhub.com",
+      "firstName": "Alice",
+      "lastName": "Miller",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user15",
+        "skills": [
+          "MongoDB",
+          "Data Analysis",
+          "CSS"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('de10a09d-689b-4f54-ac2b-7bf07b3509f7')",
+      "userId": "USR48237A",
+      "email": "user16@eduhub.com",
+      "firstName": "Jane",
+      "lastName": "Anderson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user16",
+        "skills": [
+          "HTML",
+          "Data Analysis",
+          "JavaScript"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('696a4d9f-660c-4240-8a0b-11d1597514f2')",
+      "userId": "USR23CDC0",
+      "email": "user17@eduhub.com",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user17",
+        "skills": [
+          "Machine Learning",
+          "CSS",
+          "MongoDB"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('7c3359f0-46f7-4f9a-97ba-a8130b92eca3')",
+      "userId": "USRABC128",
+      "email": "user18@eduhub.com",
+      "firstName": "Grace",
+      "lastName": "Brown",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user18",
+        "skills": [
+          "HTML",
+          "MongoDB",
+          "Python"
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "_id": "ObjectId('6fbbc3c8-4976-43f9-beb7-78ca7f0e0fdb')",
+      "userId": "USRCD5073",
+      "email": "user19@eduhub.com",
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "role": "student",
+      "dateJoined": "2024-01-01T00:00:00",
+      "profile": {
+        "bio": "This is a student bio.",
+        "avatar": "https://avatar.com/user19",
+        "skills": [
+          "CSS",
+          "MongoDB",
+          "Machine Learning"
+        ]
+      },
+      "isActive": true
+    }
+  ],
+  "courses": [
+    {
+      "_id": "ObjectId('22bd59d6-7e03-4ea9-9a9f-092960e99ac5')",
+      "courseId": "CRSCC42A9",
+      "title": "Course 1",
+      "description": "This is the description for Course 1",
+      "instructorId": "USR8D9638",
+      "category": "Programming",
+      "level": "beginner",
+      "duration": 39,
+      "price": 190.28,
+      "tags": [
+        "HTML",
+        "MongoDB"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('dc925975-2bd8-414e-9ff2-d908acf059e9')",
+      "courseId": "CRSD8FABE",
+      "title": "Course 2",
+      "description": "This is the description for Course 2",
+      "instructorId": "USRA9DEAD",
+      "category": "Business",
+      "level": "intermediate",
+      "duration": 38,
+      "price": 185.46,
+      "tags": [
+        "Machine Learning",
+        "Data Analysis"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('a1396759-5819-4ce0-8a86-f5634dbc9aa8')",
+      "courseId": "CRSD7C049",
+      "title": "Course 3",
+      "description": "This is the description for Course 3",
+      "instructorId": "USR8D9638",
+      "category": "Data Science",
+      "level": "beginner",
+      "duration": 33,
+      "price": 125.42,
+      "tags": [
+        "MongoDB",
+        "HTML"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('e1837e8e-220d-42cb-854e-e4c9c503331d')",
+      "courseId": "CRS064F7B",
+      "title": "Course 4",
+      "description": "This is the description for Course 4",
+      "instructorId": "USRB79912",
+      "category": "Business",
+      "level": "advanced",
+      "duration": 22,
+      "price": 91.53,
+      "tags": [
+        "Data Analysis",
+        "JavaScript"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('a5c4c930-505a-4464-bb8d-7eef914e04f6')",
+      "courseId": "CRS90C9D7",
+      "title": "Course 5",
+      "description": "This is the description for Course 5",
+      "instructorId": "USR18EFA8",
+      "category": "Programming",
+      "level": "beginner",
+      "duration": 37,
+      "price": 48.63,
+      "tags": [
+        "HTML",
+        "Data Analysis"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('95fe9205-d112-44d7-8a01-61c35024ec8a')",
+      "courseId": "CRSA7D874",
+      "title": "Course 6",
+      "description": "This is the description for Course 6",
+      "instructorId": "USR18EFA8",
+      "category": "Programming",
+      "level": "intermediate",
+      "duration": 22,
+      "price": 131.29,
+      "tags": [
+        "Machine Learning",
+        "JavaScript"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('722a5af7-81c2-4613-ae52-f9b9c13ed0e9')",
+      "courseId": "CRSB563BF",
+      "title": "Course 7",
+      "description": "This is the description for Course 7",
+      "instructorId": "USR8D9638",
+      "category": "Programming",
+      "level": "advanced",
+      "duration": 33,
+      "price": 49.46,
+      "tags": [
+        "JavaScript",
+        "MongoDB"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    },
+    {
+      "_id": "ObjectId('655f5f08-67ce-4b76-a526-5f449079886a')",
+      "courseId": "CRS744E6E",
+      "title": "Course 8",
+      "description": "This is the description for Course 8",
+      "instructorId": "USR8D9638",
+      "category": "Programming",
+      "level": "intermediate",
+      "duration": 23,
+      "price": 56.88,
+      "tags": [
+        "Python",
+        "HTML"
+      ],
+      "createdAt": "2024-01-15T00:00:00",
+      "updatedAt": "2024-02-15T00:00:00",
+      "isPublished": true
+    }
+  ],
+  "enrollments": [
+    {
+      "_id": "ObjectId('478ab42e-e506-45fc-9041-a256cfcc9f88')",
+      "enrollmentId": "ENRA4D52B",
+      "studentId": "USRCD5073",
+      "courseId": "CRS90C9D7",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.97,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('59bc807f-e314-40e1-b0b8-00078373aa80')",
+      "enrollmentId": "ENR7EF7AA",
+      "studentId": "USRABC128",
+      "courseId": "CRS90C9D7",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.84,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('5f472406-bb21-4488-942b-7fe08d565a92')",
+      "enrollmentId": "ENRF07A88",
+      "studentId": "USR7646E9",
+      "courseId": "CRSD7C049",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.54,
+      "completed": true,
+      "certificateIssued": false
+    },
+    {
+      "_id": "ObjectId('075e64fe-1294-41eb-91f5-d3b07ece5850')",
+      "enrollmentId": "ENRB6B1C3",
+      "studentId": "USR30019B",
+      "courseId": "CRSCC42A9",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.11,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "_id": "ObjectId('27c35c3c-904c-4ffc-adb7-f19695c46857')",
+      "enrollmentId": "ENRF3C548",
+      "studentId": "USR612BD6",
+      "courseId": "CRSCC42A9",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.24,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('a16b4811-08e6-4ac3-8443-cb0ff16063a4')",
+      "enrollmentId": "ENRB1E997",
+      "studentId": "USR48237A",
+      "courseId": "CRS744E6E",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.82,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('0a270974-3aca-4faf-9552-70e933b399e8')",
+      "enrollmentId": "ENRD8701E",
+      "studentId": "USRFE339F",
+      "courseId": "CRS744E6E",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.95,
+      "completed": true,
+      "certificateIssued": false
+    },
+    {
+      "_id": "ObjectId('b8feb8d4-af94-4c2b-9cb6-e8cb5b3bd1b2')",
+      "enrollmentId": "ENR268638",
+      "studentId": "USRA5EDF9",
+      "courseId": "CRSB563BF",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.96,
+      "completed": true,
+      "certificateIssued": false
+    },
+    {
+      "_id": "ObjectId('7539027d-8907-4e0b-bab9-fe3081da540a')",
+      "enrollmentId": "ENR494DD6",
+      "studentId": "USR6DDD02",
+      "courseId": "CRSA7D874",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.44,
+      "completed": false,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('d95e0543-7b60-4fba-8359-026d752dfc23')",
+      "enrollmentId": "ENR45349D",
+      "studentId": "USR612BD6",
+      "courseId": "CRS064F7B",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.06,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('abeb4cce-771a-435f-ab7c-01caa777f47d')",
+      "enrollmentId": "ENR9BDD1D",
+      "studentId": "USRF5A4CA",
+      "courseId": "CRS064F7B",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.01,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('b38e7e7d-e2f1-45c9-996a-54f548325332')",
+      "enrollmentId": "ENRDBBB03",
+      "studentId": "USR8E2440",
+      "courseId": "CRSCC42A9",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.86,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('222a7145-8163-418a-8fd9-2a3c48cfa8f3')",
+      "enrollmentId": "ENRA1DC00",
+      "studentId": "USR24E7BD",
+      "courseId": "CRS744E6E",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.21,
+      "completed": true,
+      "certificateIssued": false
+    },
+    {
+      "_id": "ObjectId('f5f7069a-a9af-42e6-b41c-c15d69fd41c1')",
+      "enrollmentId": "ENREC49DB",
+      "studentId": "USR612BD6",
+      "courseId": "CRS744E6E",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.81,
+      "completed": true,
+      "certificateIssued": true
+    },
+    {
+      "_id": "ObjectId('232098a4-1a6e-43ba-9183-1c241b33a1fc')",
+      "enrollmentId": "ENRC1FC59",
+      "studentId": "USR8E2440",
+      "courseId": "CRSB563BF",
+      "enrollmentDate": "2024-03-01T00:00:00",
+      "progress": 0.35,
+      "completed": false,
+      "certificateIssued": false
+    }
+  ],
+  "lessons": [
+    {
+      "_id": "ObjectId('8e9e859f-dbbe-437d-a145-874f56771011')",
+      "lessonId": "LSNBE8414",
+      "courseId": "CRSCC42A9",
+      "title": "Lesson 1",
+      "content": "Lesson content 1",
+      "order": 1,
+      "resources": [
+        "https://resources.com/res0"
+      ],
+      "duration": 53,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f0258739-89cb-4a24-8915-105e1f26f9d0')",
+      "lessonId": "LSNDF6887",
+      "courseId": "CRSD8FABE",
+      "title": "Lesson 2",
+      "content": "Lesson content 2",
+      "order": 2,
+      "resources": [
+        "https://resources.com/res1"
+      ],
+      "duration": 13,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('07b5d188-9a19-4299-b151-49bffcea93c2')",
+      "lessonId": "LSNB700F5",
+      "courseId": "CRSB563BF",
+      "title": "Lesson 3",
+      "content": "Lesson content 3",
+      "order": 3,
+      "resources": [
+        "https://resources.com/res2"
+      ],
+      "duration": 56,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('c74d1bc7-f723-4221-b7e4-751a34962475')",
+      "lessonId": "LSN2D8F9C",
+      "courseId": "CRSA7D874",
+      "title": "Lesson 4",
+      "content": "Lesson content 4",
+      "order": 4,
+      "resources": [
+        "https://resources.com/res3"
+      ],
+      "duration": 16,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('a03ca3d8-8235-4518-a61e-3a121ecd5efc')",
+      "lessonId": "LSN340B97",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 5",
+      "content": "Lesson content 5",
+      "order": 5,
+      "resources": [
+        "https://resources.com/res4"
+      ],
+      "duration": 22,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('47a1696c-8f22-4ed4-8cac-4064076e51ce')",
+      "lessonId": "LSN082356",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 6",
+      "content": "Lesson content 6",
+      "order": 1,
+      "resources": [
+        "https://resources.com/res5"
+      ],
+      "duration": 44,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('7f80d565-be75-4c38-a629-b274fdeeca30')",
+      "lessonId": "LSNDF82FC",
+      "courseId": "CRS744E6E",
+      "title": "Lesson 7",
+      "content": "Lesson content 7",
+      "order": 2,
+      "resources": [
+        "https://resources.com/res6"
+      ],
+      "duration": 18,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('10eb2dd2-44cf-4275-814e-5209e3c9c2f4')",
+      "lessonId": "LSNC989B9",
+      "courseId": "CRSB563BF",
+      "title": "Lesson 8",
+      "content": "Lesson content 8",
+      "order": 3,
+      "resources": [
+        "https://resources.com/res7"
+      ],
+      "duration": 21,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f9dd1f20-5a8a-4fc8-8f6f-1bc9bcec2901')",
+      "lessonId": "LSN39E458",
+      "courseId": "CRS90C9D7",
+      "title": "Lesson 9",
+      "content": "Lesson content 9",
+      "order": 4,
+      "resources": [
+        "https://resources.com/res8"
+      ],
+      "duration": 39,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('1c3a477d-6641-4da8-935f-9d3794e6ad87')",
+      "lessonId": "LSNE2B9F8",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 10",
+      "content": "Lesson content 10",
+      "order": 5,
+      "resources": [
+        "https://resources.com/res9"
+      ],
+      "duration": 14,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('35b79a06-9c08-4ce0-95ad-080aa25c8c6f')",
+      "lessonId": "LSNC5F5DC",
+      "courseId": "CRS744E6E",
+      "title": "Lesson 11",
+      "content": "Lesson content 11",
+      "order": 1,
+      "resources": [
+        "https://resources.com/res10"
+      ],
+      "duration": 45,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('172aaf9c-c3fe-457a-8cd4-b11c60f24da6')",
+      "lessonId": "LSN01A2DF",
+      "courseId": "CRSD8FABE",
+      "title": "Lesson 12",
+      "content": "Lesson content 12",
+      "order": 2,
+      "resources": [
+        "https://resources.com/res11"
+      ],
+      "duration": 13,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('cf8541a0-f41b-4039-9acf-16a4a50cb2bf')",
+      "lessonId": "LSN042CC8",
+      "courseId": "CRSCC42A9",
+      "title": "Lesson 13",
+      "content": "Lesson content 13",
+      "order": 3,
+      "resources": [
+        "https://resources.com/res12"
+      ],
+      "duration": 15,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('4debbf63-8318-4474-b3f7-ccbf95658431')",
+      "lessonId": "LSNBC9F7F",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 14",
+      "content": "Lesson content 14",
+      "order": 4,
+      "resources": [
+        "https://resources.com/res13"
+      ],
+      "duration": 20,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('98c5d887-71b4-4a46-bb25-81c67863651b')",
+      "lessonId": "LSN63DC45",
+      "courseId": "CRSB563BF",
+      "title": "Lesson 15",
+      "content": "Lesson content 15",
+      "order": 5,
+      "resources": [
+        "https://resources.com/res14"
+      ],
+      "duration": 41,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('ddc7da3b-7496-4222-b8af-de22a8978277')",
+      "lessonId": "LSNECA6E5",
+      "courseId": "CRS744E6E",
+      "title": "Lesson 16",
+      "content": "Lesson content 16",
+      "order": 1,
+      "resources": [
+        "https://resources.com/res15"
+      ],
+      "duration": 23,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('1c53a3c0-26a6-477e-9ec9-607b94034903')",
+      "lessonId": "LSN2632E8",
+      "courseId": "CRSB563BF",
+      "title": "Lesson 17",
+      "content": "Lesson content 17",
+      "order": 2,
+      "resources": [
+        "https://resources.com/res16"
+      ],
+      "duration": 13,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('273d20c8-5ba4-4d18-b53c-845b63292927')",
+      "lessonId": "LSN66EAC8",
+      "courseId": "CRSD7C049",
+      "title": "Lesson 18",
+      "content": "Lesson content 18",
+      "order": 3,
+      "resources": [
+        "https://resources.com/res17"
+      ],
+      "duration": 34,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('3621fd27-eb94-42f0-97c0-af7c2fadfeae')",
+      "lessonId": "LSN546098",
+      "courseId": "CRSCC42A9",
+      "title": "Lesson 19",
+      "content": "Lesson content 19",
+      "order": 4,
+      "resources": [
+        "https://resources.com/res18"
+      ],
+      "duration": 34,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('dccd0d43-4d0f-49fb-bbbc-674c5d816113')",
+      "lessonId": "LSNE1FC06",
+      "courseId": "CRS90C9D7",
+      "title": "Lesson 20",
+      "content": "Lesson content 20",
+      "order": 5,
+      "resources": [
+        "https://resources.com/res19"
+      ],
+      "duration": 60,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('74fe7a23-e3a3-4ae5-af8a-0dcefe03a044')",
+      "lessonId": "LSN3CBA06",
+      "courseId": "CRS744E6E",
+      "title": "Lesson 21",
+      "content": "Lesson content 21",
+      "order": 1,
+      "resources": [
+        "https://resources.com/res20"
+      ],
+      "duration": 28,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('38f3cdc0-0dac-48b8-a32b-28032f6cdef5')",
+      "lessonId": "LSN8D83EE",
+      "courseId": "CRSB563BF",
+      "title": "Lesson 22",
+      "content": "Lesson content 22",
+      "order": 2,
+      "resources": [
+        "https://resources.com/res21"
+      ],
+      "duration": 54,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('123faf34-8423-45a3-997d-c66abfde6258')",
+      "lessonId": "LSN0175DE",
+      "courseId": "CRS744E6E",
+      "title": "Lesson 23",
+      "content": "Lesson content 23",
+      "order": 3,
+      "resources": [
+        "https://resources.com/res22"
+      ],
+      "duration": 19,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('946243b4-945d-42e0-b11b-54b10cc47403')",
+      "lessonId": "LSN8A26E8",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 24",
+      "content": "Lesson content 24",
+      "order": 4,
+      "resources": [
+        "https://resources.com/res23"
+      ],
+      "duration": 28,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f422fa82-0cf1-470e-b33f-216cc916b26b')",
+      "lessonId": "LSN51004D",
+      "courseId": "CRS064F7B",
+      "title": "Lesson 25",
+      "content": "Lesson content 25",
+      "order": 5,
+      "resources": [
+        "https://resources.com/res24"
+      ],
+      "duration": 13,
+      "createdAt": "2024-04-01T00:00:00",
+      "updatedAt": "2024-04-10T00:00:00"
+    }
+  ],
+  "assignments": [
+    {
+      "_id": "ObjectId('af817aa4-261e-4e7b-8fbd-50d42aa6656e')",
+      "assignmentId": "ASM3AE774",
+      "courseId": "CRSCC42A9",
+      "lessonId": "LSN8A26E8",
+      "title": "Assignment 1",
+      "instructions": "Complete assignment 1",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('3fc5649f-88c5-4ab2-a812-b673743f675c')",
+      "assignmentId": "ASM7CC0EF",
+      "courseId": "CRSA7D874",
+      "lessonId": "LSNDF6887",
+      "title": "Assignment 2",
+      "instructions": "Complete assignment 2",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('70267877-321c-41ee-a2c8-620f8696ea96')",
+      "assignmentId": "ASM809A3F",
+      "courseId": "CRSCC42A9",
+      "lessonId": "LSN546098",
+      "title": "Assignment 3",
+      "instructions": "Complete assignment 3",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f66f2a7e-2464-42d1-abde-ae5532edab18')",
+      "assignmentId": "ASM933952",
+      "courseId": "CRS744E6E",
+      "lessonId": "LSN2632E8",
+      "title": "Assignment 4",
+      "instructions": "Complete assignment 4",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('25bb3663-6ce7-4261-b160-0a33c64833c4')",
+      "assignmentId": "ASMCBCA3C",
+      "courseId": "CRSD7C049",
+      "lessonId": "LSNDF6887",
+      "title": "Assignment 5",
+      "instructions": "Complete assignment 5",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('34fbce1d-61c8-4e53-85d3-8b914842aabb')",
+      "assignmentId": "ASM2CA6ED",
+      "courseId": "CRSD8FABE",
+      "lessonId": "LSN082356",
+      "title": "Assignment 6",
+      "instructions": "Complete assignment 6",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('616fe346-8b57-48e2-8270-c66c771a833b')",
+      "assignmentId": "ASM9BFA81",
+      "courseId": "CRSD8FABE",
+      "lessonId": "LSNE1FC06",
+      "title": "Assignment 7",
+      "instructions": "Complete assignment 7",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('707b5784-5c3c-41c9-9ef0-859f394be65e')",
+      "assignmentId": "ASMB3F26F",
+      "courseId": "CRSD8FABE",
+      "lessonId": "LSN8D83EE",
+      "title": "Assignment 8",
+      "instructions": "Complete assignment 8",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('7762eb13-b854-41ea-b101-1ac7e812c568')",
+      "assignmentId": "ASMAEAC94",
+      "courseId": "CRS064F7B",
+      "lessonId": "LSN042CC8",
+      "title": "Assignment 9",
+      "instructions": "Complete assignment 9",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    },
+    {
+      "_id": "ObjectId('581ba320-110a-4f09-ae21-f75fb4f37e4b')",
+      "assignmentId": "ASMCD733E",
+      "courseId": "CRSD8FABE",
+      "lessonId": "LSN546098",
+      "title": "Assignment 10",
+      "instructions": "Complete assignment 10",
+      "dueDate": "2024-05-01T00:00:00",
+      "maxScore": 100,
+      "createdAt": "2024-04-20T00:00:00",
+      "updatedAt": "2024-04-25T00:00:00"
+    }
+  ],
+  "submissions": [
+    {
+      "_id": "ObjectId('2cddafce-22d4-4936-94d8-a97d9261fe9d')",
+      "submissionId": "SUB83D9F6",
+      "assignmentId": "ASMCD733E",
+      "studentId": "USR612BD6",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 1",
+      "grade": 52,
+      "feedback": "Feedback for submission 1",
+      "gradedBy": "USRB79912",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('60d81758-274b-46dd-a0c8-195dfa6c5695')",
+      "submissionId": "SUB50A7CE",
+      "assignmentId": "ASM7CC0EF",
+      "studentId": "USRF5A4CA",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 2",
+      "grade": 92,
+      "feedback": "Feedback for submission 2",
+      "gradedBy": "USR18EFA8",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('2d022386-1e42-4d60-a8ba-280b038f11a7')",
+      "submissionId": "SUB85C8CF",
+      "assignmentId": "ASMCD733E",
+      "studentId": "USRF5A4CA",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 3",
+      "grade": 70,
+      "feedback": "Feedback for submission 3",
+      "gradedBy": "USRB79912",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('0262c54d-d21d-47ce-96db-2368d9d4b413')",
+      "submissionId": "SUB5DAE7F",
+      "assignmentId": "ASMCBCA3C",
+      "studentId": "USRCD5073",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 4",
+      "grade": 92,
+      "feedback": "Feedback for submission 4",
+      "gradedBy": "USRA9DEAD",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f9a17ed2-1a4c-4d29-82ac-dc99ef4ab7e1')",
+      "submissionId": "SUB24FE0F",
+      "assignmentId": "ASM2CA6ED",
+      "studentId": "USR48237A",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 5",
+      "grade": 66,
+      "feedback": "Feedback for submission 5",
+      "gradedBy": "USRA9DEAD",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('39e77186-33a0-43a8-bc60-53d2097a379f')",
+      "submissionId": "SUBAE011C",
+      "assignmentId": "ASM809A3F",
+      "studentId": "USR6DDD02",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 6",
+      "grade": 79,
+      "feedback": "Feedback for submission 6",
+      "gradedBy": "USR8D9638",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('1d8659ec-e597-4cba-a7bf-71aa56beabe7')",
+      "submissionId": "SUB1AA7F8",
+      "assignmentId": "ASM7CC0EF",
+      "studentId": "USR7646E9",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 7",
+      "grade": 79,
+      "feedback": "Feedback for submission 7",
+      "gradedBy": "USR60F95B",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('0231f7a1-95cd-418c-89b8-f852b8ccbe68')",
+      "submissionId": "SUB05B7A9",
+      "assignmentId": "ASMCD733E",
+      "studentId": "USRF5A4CA",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 8",
+      "grade": 54,
+      "feedback": "Feedback for submission 8",
+      "gradedBy": "USR60F95B",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('f995ea56-4b46-4974-b9a4-b74179611c03')",
+      "submissionId": "SUB1E4EDB",
+      "assignmentId": "ASM933952",
+      "studentId": "USRA5EDF9",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 9",
+      "grade": 66,
+      "feedback": "Feedback for submission 9",
+      "gradedBy": "USRB79912",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('101d8084-3ed6-40a6-ac35-23e9524edac1')",
+      "submissionId": "SUB65C60D",
+      "assignmentId": "ASM2CA6ED",
+      "studentId": "USRB250D0",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 10",
+      "grade": 65,
+      "feedback": "Feedback for submission 10",
+      "gradedBy": "USR60F95B",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('3fc9322e-94d6-4b79-95ac-c7f8ba0f0932')",
+      "submissionId": "SUB96A2B6",
+      "assignmentId": "ASMCBCA3C",
+      "studentId": "USR7646E9",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 11",
+      "grade": 78,
+      "feedback": "Feedback for submission 11",
+      "gradedBy": "USRA9DEAD",
+      "gradedAt": "2024-05-03T00:00:00"
+    },
+    {
+      "_id": "ObjectId('2336567f-51ee-4c5f-836a-10c539e83921')",
+      "submissionId": "SUB427242",
+      "assignmentId": "ASMAEAC94",
+      "studentId": "USRABC128",
+      "submissionDate": "2024-05-02T00:00:00",
+      "content": "Submission content 12",
+      "grade": 89,
+      "feedback": "Feedback for submission 12",
+      "gradedBy": "USR8D9638",
+      "gradedAt": "2024-05-03T00:00:00"
+    }
+  ]
+}
