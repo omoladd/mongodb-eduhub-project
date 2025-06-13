@@ -1,1302 +1,948 @@
 {
   "users": [
     {
-      "_id": "ObjectId('42f0b348-945c-4a4a-90cd-a3af345b208a')",
-      "userId": "USR60F95B",
-      "email": "user0@eduhub.com",
-      "firstName": "Jane",
+      "userId": "u1",
+      "email": "alice.student@example.com",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "role": "student",
+      "dateJoined": "2024-01-10T09:00:00Z",
+      "profile": {
+        "bio": "Aspiring developer.",
+        "avatar": "alice.jpg",
+        "skills": ["JavaScript", "HTML"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u2",
+      "email": "bob.instructor@example.com",
+      "firstName": "Bob",
       "lastName": "Smith",
       "role": "instructor",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2023-12-15T10:00:00Z",
       "profile": {
-        "bio": "This is a instructor bio.",
-        "avatar": "https://avatar.com/user0",
-        "skills": [
-          "HTML",
-          "MongoDB",
-          "Data Analysis"
-        ]
+        "bio": "Full-stack instructor.",
+        "avatar": "bob.jpg",
+        "skills": ["Node.js", "MongoDB"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('f13ec46d-97fc-4045-9709-71d635687b1b')",
-      "userId": "USRA9DEAD",
-      "email": "user1@eduhub.com",
-      "firstName": "Bob",
-      "lastName": "Johnson",
-      "role": "instructor",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a instructor bio.",
-        "avatar": "https://avatar.com/user1",
-        "skills": [
-          "HTML",
-          "Python",
-          "JavaScript"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('de6047e7-7593-44a9-8199-e65224ef34b7')",
-      "userId": "USR8D9638",
-      "email": "user2@eduhub.com",
-      "firstName": "Jane",
-      "lastName": "Anderson",
-      "role": "instructor",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a instructor bio.",
-        "avatar": "https://avatar.com/user2",
-        "skills": [
-          "Machine Learning",
-          "Python",
-          "HTML"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('480b0e84-d578-451c-a5bf-22e5c72ac79b')",
-      "userId": "USR18EFA8",
-      "email": "user3@eduhub.com",
-      "firstName": "Jane",
-      "lastName": "Brown",
-      "role": "instructor",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a instructor bio.",
-        "avatar": "https://avatar.com/user3",
-        "skills": [
-          "Data Analysis",
-          "JavaScript",
-          "HTML"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('9cefe4d0-6cfb-4f80-a7a9-a8c0b344d8d4')",
-      "userId": "USRB79912",
-      "email": "user4@eduhub.com",
-      "firstName": "John",
-      "lastName": "Taylor",
-      "role": "instructor",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a instructor bio.",
-        "avatar": "https://avatar.com/user4",
-        "skills": [
-          "Data Analysis",
-          "HTML",
-          "JavaScript"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('3ef47b82-f383-42ee-8992-88d0f10c1015')",
-      "userId": "USR529AA3",
-      "email": "user5@eduhub.com",
-      "firstName": "Eve",
-      "lastName": "Brown",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user5",
-        "skills": [
-          "Machine Learning",
-          "JavaScript",
-          "MongoDB"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('1841d01b-a135-4d28-890d-7f920e0540e4')",
-      "userId": "USR8E2440",
-      "email": "user6@eduhub.com",
-      "firstName": "John",
-      "lastName": "Johnson",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user6",
-        "skills": [
-          "HTML",
-          "Machine Learning",
-          "MongoDB"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('71aaabf3-9281-457c-a1c2-461d8c775244')",
-      "userId": "USRB250D0",
-      "email": "user7@eduhub.com",
+      "userId": "u3",
+      "email": "carol.student@example.com",
       "firstName": "Carol",
-      "lastName": "Johnson",
+      "lastName": "Lee",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-02-01T11:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user7",
-        "skills": [
-          "Data Analysis",
-          "MongoDB",
-          "Python"
-        ]
+        "bio": "Interested in data science.",
+        "avatar": "carol.jpg",
+        "skills": ["Python", "Pandas"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('fae081a1-c076-4f3f-b7af-18c5063f7e81')",
-      "userId": "USR612BD6",
-      "email": "user8@eduhub.com",
-      "firstName": "Jane",
+      "userId": "u4",
+      "email": "dan.instructor@example.com",
+      "firstName": "Dan",
+      "lastName": "Brown",
+      "role": "instructor",
+      "dateJoined": "2023-11-20T12:00:00Z",
+      "profile": {
+        "bio": "Backend specialist.",
+        "avatar": "dan.jpg",
+        "skills": ["Java", "Spring"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u5",
+      "email": "eve.student@example.com",
+      "firstName": "Eve",
+      "lastName": "Davis",
+      "role": "student",
+      "dateJoined": "2024-03-05T13:00:00Z",
+      "profile": {
+        "bio": "Frontend enthusiast.",
+        "avatar": "eve.jpg",
+        "skills": ["CSS", "React"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u6",
+      "email": "frank.instructor@example.com",
+      "firstName": "Frank",
+      "lastName": "Miller",
+      "role": "instructor",
+      "dateJoined": "2023-10-10T14:00:00Z",
+      "profile": {
+        "bio": "DevOps engineer.",
+        "avatar": "frank.jpg",
+        "skills": ["Docker", "Kubernetes"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u7",
+      "email": "grace.student@example.com",
+      "firstName": "Grace",
       "lastName": "Wilson",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-04-12T15:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user8",
-        "skills": [
-          "Python",
-          "MongoDB",
-          "HTML"
-        ]
+        "bio": "Learning cloud computing.",
+        "avatar": "grace.jpg",
+        "skills": ["AWS", "Azure"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('9ffe9780-5766-4c90-a116-ae9757c8bbb7')",
-      "userId": "USR24E7BD",
-      "email": "user9@eduhub.com",
-      "firstName": "Heidi",
-      "lastName": "Davis",
+      "userId": "u8",
+      "email": "henry.instructor@example.com",
+      "firstName": "Henry",
+      "lastName": "Moore",
+      "role": "instructor",
+      "dateJoined": "2023-09-18T16:00:00Z",
+      "profile": {
+        "bio": "AI/ML instructor.",
+        "avatar": "henry.jpg",
+        "skills": ["TensorFlow", "PyTorch"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u9",
+      "email": "ivy.student@example.com",
+      "firstName": "Ivy",
+      "lastName": "Taylor",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-05-20T17:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user9",
-        "skills": [
-          "CSS",
-          "Python",
-          "Machine Learning"
-        ]
+        "bio": "Interested in mobile apps.",
+        "avatar": "ivy.jpg",
+        "skills": ["Flutter", "Dart"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('07bdc4a6-1ec8-470d-b4f7-79446f22ed04')",
-      "userId": "USR7646E9",
-      "email": "user10@eduhub.com",
-      "firstName": "Grace",
-      "lastName": "Doe",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
-      "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user10",
-        "skills": [
-          "Machine Learning",
-          "Python",
-          "JavaScript"
-        ]
-      },
-      "isActive": true
-    },
-    {
-      "_id": "ObjectId('81c19d02-d041-48b3-90a0-ca3ea2109e57')",
-      "userId": "USR6DDD02",
-      "email": "user11@eduhub.com",
-      "firstName": "Carol",
+      "userId": "u10",
+      "email": "jack.instructor@example.com",
+      "firstName": "Jack",
       "lastName": "Anderson",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "role": "instructor",
+      "dateJoined": "2023-08-22T18:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user11",
-        "skills": [
-          "CSS",
-          "MongoDB",
-          "JavaScript"
-        ]
+        "bio": "Database expert.",
+        "avatar": "jack.jpg",
+        "skills": ["MongoDB", "SQL"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('fa97d5be-7840-4725-94b3-4b755a072a15')",
-      "userId": "USR30019B",
-      "email": "user12@eduhub.com",
-      "firstName": "Bob",
-      "lastName": "Doe",
+      "userId": "u11",
+      "email": "kate.student@example.com",
+      "firstName": "Kate",
+      "lastName": "Thomas",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-06-01T19:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user12",
-        "skills": [
-          "Python",
-          "HTML",
-          "Data Analysis"
-        ]
+        "bio": "Learning programming.",
+        "avatar": "kate.jpg",
+        "skills": ["C++", "Python"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('dc4fdb52-96cd-4868-b0a1-d8d42b6de192')",
-      "userId": "USRA5EDF9",
-      "email": "user13@eduhub.com",
-      "firstName": "Carol",
-      "lastName": "Doe",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "userId": "u12",
+      "email": "leo.instructor@example.com",
+      "firstName": "Leo",
+      "lastName": "Jackson",
+      "role": "instructor",
+      "dateJoined": "2023-07-30T20:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user13",
-        "skills": [
-          "CSS",
-          "Data Analysis",
-          "Python"
-        ]
+        "bio": "Cybersecurity instructor.",
+        "avatar": "leo.jpg",
+        "skills": ["Security", "Linux"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('787b554f-a681-4d2f-a32f-d5b5989ec1a4')",
-      "userId": "USRF5A4CA",
-      "email": "user14@eduhub.com",
-      "firstName": "Eve",
-      "lastName": "Davis",
+      "userId": "u13",
+      "email": "mia.student@example.com",
+      "firstName": "Mia",
+      "lastName": "White",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-06-05T21:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user14",
-        "skills": [
-          "Machine Learning",
-          "HTML",
-          "MongoDB"
-        ]
+        "bio": "Interested in AI.",
+        "avatar": "mia.jpg",
+        "skills": ["Python", "ML"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('199275ad-4e45-4e64-a2a7-8baa6d94f610')",
-      "userId": "USRFE339F",
-      "email": "user15@eduhub.com",
-      "firstName": "Alice",
-      "lastName": "Miller",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "userId": "u14",
+      "email": "nina.instructor@example.com",
+      "firstName": "Nina",
+      "lastName": "Harris",
+      "role": "instructor",
+      "dateJoined": "2023-06-15T22:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user15",
-        "skills": [
-          "MongoDB",
-          "Data Analysis",
-          "CSS"
-        ]
+        "bio": "UI/UX designer.",
+        "avatar": "nina.jpg",
+        "skills": ["Figma", "Sketch"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('de10a09d-689b-4f54-ac2b-7bf07b3509f7')",
-      "userId": "USR48237A",
-      "email": "user16@eduhub.com",
-      "firstName": "Jane",
-      "lastName": "Anderson",
+      "userId": "u15",
+      "email": "oliver.student@example.com",
+      "firstName": "Oliver",
+      "lastName": "Martin",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-06-10T23:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user16",
-        "skills": [
-          "HTML",
-          "Data Analysis",
-          "JavaScript"
-        ]
+        "bio": "Learning backend.",
+        "avatar": "oliver.jpg",
+        "skills": ["Node.js", "Express"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('696a4d9f-660c-4240-8a0b-11d1597514f2')",
-      "userId": "USR23CDC0",
-      "email": "user17@eduhub.com",
-      "firstName": "Bob",
-      "lastName": "Johnson",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "userId": "u16",
+      "email": "paul.instructor@example.com",
+      "firstName": "Paul",
+      "lastName": "Clark",
+      "role": "instructor",
+      "dateJoined": "2023-05-12T08:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user17",
-        "skills": [
-          "Machine Learning",
-          "CSS",
-          "MongoDB"
-        ]
+        "bio": "Cloud architect.",
+        "avatar": "paul.jpg",
+        "skills": ["AWS", "GCP"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('7c3359f0-46f7-4f9a-97ba-a8130b92eca3')",
-      "userId": "USRABC128",
-      "email": "user18@eduhub.com",
-      "firstName": "Grace",
-      "lastName": "Brown",
+      "userId": "u17",
+      "email": "quinn.student@example.com",
+      "firstName": "Quinn",
+      "lastName": "Lewis",
       "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "dateJoined": "2024-06-11T09:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user18",
-        "skills": [
-          "HTML",
-          "MongoDB",
-          "Python"
-        ]
+        "bio": "Interested in DevOps.",
+        "avatar": "quinn.jpg",
+        "skills": ["Docker", "CI/CD"]
       },
       "isActive": true
     },
     {
-      "_id": "ObjectId('6fbbc3c8-4976-43f9-beb7-78ca7f0e0fdb')",
-      "userId": "USRCD5073",
-      "email": "user19@eduhub.com",
-      "firstName": "Bob",
-      "lastName": "Smith",
-      "role": "student",
-      "dateJoined": "2024-01-01T00:00:00",
+      "userId": "u18",
+      "email": "rachel.instructor@example.com",
+      "firstName": "Rachel",
+      "lastName": "Walker",
+      "role": "instructor",
+      "dateJoined": "2023-04-10T10:00:00Z",
       "profile": {
-        "bio": "This is a student bio.",
-        "avatar": "https://avatar.com/user19",
-        "skills": [
-          "CSS",
-          "MongoDB",
-          "Machine Learning"
-        ]
+        "bio": "Mobile app developer.",
+        "avatar": "rachel.jpg",
+        "skills": ["Flutter", "Swift"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u19",
+      "email": "sam.student@example.com",
+      "firstName": "Sam",
+      "lastName": "Hall",
+      "role": "student",
+      "dateJoined": "2024-06-12T11:00:00Z",
+      "profile": {
+        "bio": "Learning databases.",
+        "avatar": "sam.jpg",
+        "skills": ["SQL", "MongoDB"]
+      },
+      "isActive": true
+    },
+    {
+      "userId": "u20",
+      "email": "tina.instructor@example.com",
+      "firstName": "Tina",
+      "lastName": "Young",
+      "role": "instructor",
+      "dateJoined": "2023-03-05T12:00:00Z",
+      "profile": {
+        "bio": "Web developer.",
+        "avatar": "tina.jpg",
+        "skills": ["HTML", "CSS"]
       },
       "isActive": true
     }
   ],
   "courses": [
     {
-      "_id": "ObjectId('22bd59d6-7e03-4ea9-9a9f-092960e99ac5')",
-      "courseId": "CRSCC42A9",
-      "title": "Course 1",
-      "description": "This is the description for Course 1",
-      "instructorId": "USR8D9638",
+      "courseId": "c1",
+      "title": "Introduction to JavaScript",
+      "description": "Learn the basics of JavaScript.",
+      "instructorId": "u2",
       "category": "Programming",
       "level": "beginner",
-      "duration": 39,
-      "price": 190.28,
-      "tags": [
-        "HTML",
-        "MongoDB"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
+      "duration": 10,
+      "price": 0,
+      "tags": ["JavaScript", "Web"],
+      "createdAt": "2024-01-01T09:00:00Z",
+      "updatedAt": "2024-01-10T09:00:00Z",
       "isPublished": true
     },
     {
-      "_id": "ObjectId('dc925975-2bd8-414e-9ff2-d908acf059e9')",
-      "courseId": "CRSD8FABE",
-      "title": "Course 2",
-      "description": "This is the description for Course 2",
-      "instructorId": "USRA9DEAD",
-      "category": "Business",
-      "level": "intermediate",
-      "duration": 38,
-      "price": 185.46,
-      "tags": [
-        "Machine Learning",
-        "Data Analysis"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
-      "isPublished": true
-    },
-    {
-      "_id": "ObjectId('a1396759-5819-4ce0-8a86-f5634dbc9aa8')",
-      "courseId": "CRSD7C049",
-      "title": "Course 3",
-      "description": "This is the description for Course 3",
-      "instructorId": "USR8D9638",
-      "category": "Data Science",
-      "level": "beginner",
-      "duration": 33,
-      "price": 125.42,
-      "tags": [
-        "MongoDB",
-        "HTML"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
-      "isPublished": true
-    },
-    {
-      "_id": "ObjectId('e1837e8e-220d-42cb-854e-e4c9c503331d')",
-      "courseId": "CRS064F7B",
-      "title": "Course 4",
-      "description": "This is the description for Course 4",
-      "instructorId": "USRB79912",
-      "category": "Business",
-      "level": "advanced",
-      "duration": 22,
-      "price": 91.53,
-      "tags": [
-        "Data Analysis",
-        "JavaScript"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
-      "isPublished": true
-    },
-    {
-      "_id": "ObjectId('a5c4c930-505a-4464-bb8d-7eef914e04f6')",
-      "courseId": "CRS90C9D7",
-      "title": "Course 5",
-      "description": "This is the description for Course 5",
-      "instructorId": "USR18EFA8",
-      "category": "Programming",
-      "level": "beginner",
-      "duration": 37,
-      "price": 48.63,
-      "tags": [
-        "HTML",
-        "Data Analysis"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
-      "isPublished": true
-    },
-    {
-      "_id": "ObjectId('95fe9205-d112-44d7-8a01-61c35024ec8a')",
-      "courseId": "CRSA7D874",
-      "title": "Course 6",
-      "description": "This is the description for Course 6",
-      "instructorId": "USR18EFA8",
-      "category": "Programming",
-      "level": "intermediate",
-      "duration": 22,
-      "price": 131.29,
-      "tags": [
-        "Machine Learning",
-        "JavaScript"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
-      "isPublished": true
-    },
-    {
-      "_id": "ObjectId('722a5af7-81c2-4613-ae52-f9b9c13ed0e9')",
-      "courseId": "CRSB563BF",
-      "title": "Course 7",
-      "description": "This is the description for Course 7",
-      "instructorId": "USR8D9638",
+      "courseId": "c2",
+      "title": "Advanced Python",
+      "description": "Deep dive into Python.",
+      "instructorId": "u8",
       "category": "Programming",
       "level": "advanced",
-      "duration": 33,
-      "price": 49.46,
-      "tags": [
-        "JavaScript",
-        "MongoDB"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
+      "duration": 20,
+      "price": 50,
+      "tags": ["Python", "Advanced"],
+      "createdAt": "2024-02-01T09:00:00Z",
+      "updatedAt": "2024-02-10T09:00:00Z",
       "isPublished": true
     },
     {
-      "_id": "ObjectId('655f5f08-67ce-4b76-a526-5f449079886a')",
-      "courseId": "CRS744E6E",
-      "title": "Course 8",
-      "description": "This is the description for Course 8",
-      "instructorId": "USR8D9638",
-      "category": "Programming",
+      "courseId": "c3",
+      "title": "Web Design Fundamentals",
+      "description": "Basics of web design.",
+      "instructorId": "u14",
+      "category": "Design",
+      "level": "beginner",
+      "duration": 8,
+      "price": 20,
+      "tags": ["Design", "UI/UX"],
+      "createdAt": "2024-03-01T09:00:00Z",
+      "updatedAt": "2024-03-10T09:00:00Z",
+      "isPublished": true
+    },
+    {
+      "courseId": "c4",
+      "title": "Database Management",
+      "description": "Learn about databases.",
+      "instructorId": "u10",
+      "category": "Database",
       "level": "intermediate",
-      "duration": 23,
-      "price": 56.88,
-      "tags": [
-        "Python",
-        "HTML"
-      ],
-      "createdAt": "2024-01-15T00:00:00",
-      "updatedAt": "2024-02-15T00:00:00",
+      "duration": 12,
+      "price": 30,
+      "tags": ["Database", "SQL", "MongoDB"],
+      "createdAt": "2024-04-01T09:00:00Z",
+      "updatedAt": "2024-04-10T09:00:00Z",
+      "isPublished": true
+    },
+    {
+      "courseId": "c5",
+      "title": "Cloud Computing Basics",
+      "description": "Introduction to cloud platforms.",
+      "instructorId": "u16",
+      "category": "Cloud",
+      "level": "beginner",
+      "duration": 15,
+      "price": 40,
+      "tags": ["Cloud", "AWS", "GCP"],
+      "createdAt": "2024-05-01T09:00:00Z",
+      "updatedAt": "2024-05-10T09:00:00Z",
+      "isPublished": true
+    },
+    {
+      "courseId": "c6",
+      "title": "Mobile App Development",
+      "description": "Build mobile apps.",
+      "instructorId": "u18",
+      "category": "Mobile",
+      "level": "intermediate",
+      "duration": 18,
+      "price": 60,
+      "tags": ["Mobile", "Flutter"],
+      "createdAt": "2024-06-01T09:00:00Z",
+      "updatedAt": "2024-06-10T09:00:00Z",
+      "isPublished": true
+    },
+    {
+      "courseId": "c7",
+      "title": "DevOps Essentials",
+      "description": "Learn DevOps tools.",
+      "instructorId": "u6",
+      "category": "DevOps",
+      "level": "intermediate",
+      "duration": 14,
+      "price": 35,
+      "tags": ["DevOps", "Docker"],
+      "createdAt": "2024-07-01T09:00:00Z",
+      "updatedAt": "2024-07-10T09:00:00Z",
+      "isPublished": true
+    },
+    {
+      "courseId": "c8",
+      "title": "Cybersecurity Fundamentals",
+      "description": "Basics of cybersecurity.",
+      "instructorId": "u12",
+      "category": "Security",
+      "level": "beginner",
+      "duration": 9,
+      "price": 25,
+      "tags": ["Security", "Linux"],
+      "createdAt": "2024-08-01T09:00:00Z",
+      "updatedAt": "2024-08-10T09:00:00Z",
       "isPublished": true
     }
   ],
   "enrollments": [
     {
-      "_id": "ObjectId('478ab42e-e506-45fc-9041-a256cfcc9f88')",
-      "enrollmentId": "ENRA4D52B",
-      "studentId": "USRCD5073",
-      "courseId": "CRS90C9D7",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.97,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('59bc807f-e314-40e1-b0b8-00078373aa80')",
-      "enrollmentId": "ENR7EF7AA",
-      "studentId": "USRABC128",
-      "courseId": "CRS90C9D7",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.84,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('5f472406-bb21-4488-942b-7fe08d565a92')",
-      "enrollmentId": "ENRF07A88",
-      "studentId": "USR7646E9",
-      "courseId": "CRSD7C049",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.54,
-      "completed": true,
-      "certificateIssued": false
-    },
-    {
-      "_id": "ObjectId('075e64fe-1294-41eb-91f5-d3b07ece5850')",
-      "enrollmentId": "ENRB6B1C3",
-      "studentId": "USR30019B",
-      "courseId": "CRSCC42A9",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.11,
+      "enrollmentId": "e1",
+      "studentId": "u1",
+      "courseId": "c1",
+      "enrollmentDate": "2024-01-11T09:00:00Z",
+      "progress": 0.5,
       "completed": false,
       "certificateIssued": false
     },
     {
-      "_id": "ObjectId('27c35c3c-904c-4ffc-adb7-f19695c46857')",
-      "enrollmentId": "ENRF3C548",
-      "studentId": "USR612BD6",
-      "courseId": "CRSCC42A9",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.24,
+      "enrollmentId": "e2",
+      "studentId": "u3",
+      "courseId": "c2",
+      "enrollmentDate": "2024-02-02T09:00:00Z",
+      "progress": 1.0,
       "completed": true,
       "certificateIssued": true
     },
     {
-      "_id": "ObjectId('a16b4811-08e6-4ac3-8443-cb0ff16063a4')",
-      "enrollmentId": "ENRB1E997",
-      "studentId": "USR48237A",
-      "courseId": "CRS744E6E",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.82,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('0a270974-3aca-4faf-9552-70e933b399e8')",
-      "enrollmentId": "ENRD8701E",
-      "studentId": "USRFE339F",
-      "courseId": "CRS744E6E",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.95,
-      "completed": true,
-      "certificateIssued": false
-    },
-    {
-      "_id": "ObjectId('b8feb8d4-af94-4c2b-9cb6-e8cb5b3bd1b2')",
-      "enrollmentId": "ENR268638",
-      "studentId": "USRA5EDF9",
-      "courseId": "CRSB563BF",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.96,
-      "completed": true,
-      "certificateIssued": false
-    },
-    {
-      "_id": "ObjectId('7539027d-8907-4e0b-bab9-fe3081da540a')",
-      "enrollmentId": "ENR494DD6",
-      "studentId": "USR6DDD02",
-      "courseId": "CRSA7D874",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.44,
-      "completed": false,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('d95e0543-7b60-4fba-8359-026d752dfc23')",
-      "enrollmentId": "ENR45349D",
-      "studentId": "USR612BD6",
-      "courseId": "CRS064F7B",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.06,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('abeb4cce-771a-435f-ab7c-01caa777f47d')",
-      "enrollmentId": "ENR9BDD1D",
-      "studentId": "USRF5A4CA",
-      "courseId": "CRS064F7B",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.01,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('b38e7e7d-e2f1-45c9-996a-54f548325332')",
-      "enrollmentId": "ENRDBBB03",
-      "studentId": "USR8E2440",
-      "courseId": "CRSCC42A9",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.86,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('222a7145-8163-418a-8fd9-2a3c48cfa8f3')",
-      "enrollmentId": "ENRA1DC00",
-      "studentId": "USR24E7BD",
-      "courseId": "CRS744E6E",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.21,
-      "completed": true,
-      "certificateIssued": false
-    },
-    {
-      "_id": "ObjectId('f5f7069a-a9af-42e6-b41c-c15d69fd41c1')",
-      "enrollmentId": "ENREC49DB",
-      "studentId": "USR612BD6",
-      "courseId": "CRS744E6E",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.81,
-      "completed": true,
-      "certificateIssued": true
-    },
-    {
-      "_id": "ObjectId('232098a4-1a6e-43ba-9183-1c241b33a1fc')",
-      "enrollmentId": "ENRC1FC59",
-      "studentId": "USR8E2440",
-      "courseId": "CRSB563BF",
-      "enrollmentDate": "2024-03-01T00:00:00",
-      "progress": 0.35,
+      "enrollmentId": "e3",
+      "studentId": "u5",
+      "courseId": "c3",
+      "enrollmentDate": "2024-03-06T09:00:00Z",
+      "progress": 0.7,
       "completed": false,
       "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e4",
+      "studentId": "u7",
+      "courseId": "c4",
+      "enrollmentDate": "2024-04-13T09:00:00Z",
+      "progress": 0.2,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e5",
+      "studentId": "u9",
+      "courseId": "c5",
+      "enrollmentDate": "2024-05-21T09:00:00Z",
+      "progress": 0.9,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e6",
+      "studentId": "u11",
+      "courseId": "c6",
+      "enrollmentDate": "2024-06-02T09:00:00Z",
+      "progress": 0.3,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e7",
+      "studentId": "u13",
+      "courseId": "c7",
+      "enrollmentDate": "2024-06-06T09:00:00Z",
+      "progress": 0.8,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e8",
+      "studentId": "u15",
+      "courseId": "c8",
+      "enrollmentDate": "2024-06-11T09:00:00Z",
+      "progress": 0.4,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e9",
+      "studentId": "u17",
+      "courseId": "c1",
+      "enrollmentDate": "2024-06-12T09:00:00Z",
+      "progress": 0.6,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e10",
+      "studentId": "u19",
+      "courseId": "c2",
+      "enrollmentDate": "2024-06-13T09:00:00Z",
+      "progress": 0.1,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e11",
+      "studentId": "u1",
+      "courseId": "c3",
+      "enrollmentDate": "2024-06-14T09:00:00Z",
+      "progress": 0.2,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e12",
+      "studentId": "u3",
+      "courseId": "c4",
+      "enrollmentDate": "2024-06-15T09:00:00Z",
+      "progress": 0.5,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e13",
+      "studentId": "u5",
+      "courseId": "c5",
+      "enrollmentDate": "2024-06-16T09:00:00Z",
+      "progress": 0.7,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e14",
+      "studentId": "u7",
+      "courseId": "c6",
+      "enrollmentDate": "2024-06-17T09:00:00Z",
+      "progress": 0.9,
+      "completed": false,
+      "certificateIssued": false
+    },
+    {
+      "enrollmentId": "e15",
+      "studentId": "u9",
+      "courseId": "c7",
+      "enrollmentDate": "2024-06-18T09:00:00Z",
+      "progress": 1.0,
+      "completed": true,
+      "certificateIssued": true
     }
   ],
   "lessons": [
     {
-      "_id": "ObjectId('8e9e859f-dbbe-437d-a145-874f56771011')",
-      "lessonId": "LSNBE8414",
-      "courseId": "CRSCC42A9",
-      "title": "Lesson 1",
-      "content": "Lesson content 1",
+      "lessonId": "l1",
+      "courseId": "c1",
+      "title": "JS Introduction",
+      "content": "Welcome to JavaScript.",
       "order": 1,
-      "resources": [
-        "https://resources.com/res0"
-      ],
-      "duration": 53,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["intro.pdf"],
+      "duration": 30,
+      "createdAt": "2024-01-01T09:00:00Z",
+      "updatedAt": "2024-01-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('f0258739-89cb-4a24-8915-105e1f26f9d0')",
-      "lessonId": "LSNDF6887",
-      "courseId": "CRSD8FABE",
-      "title": "Lesson 2",
-      "content": "Lesson content 2",
+      "lessonId": "l2",
+      "courseId": "c1",
+      "title": "JS Variables",
+      "content": "Understanding variables.",
       "order": 2,
-      "resources": [
-        "https://resources.com/res1"
-      ],
-      "duration": 13,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["variables.pdf"],
+      "duration": 40,
+      "createdAt": "2024-01-03T09:00:00Z",
+      "updatedAt": "2024-01-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('07b5d188-9a19-4299-b151-49bffcea93c2')",
-      "lessonId": "LSNB700F5",
-      "courseId": "CRSB563BF",
-      "title": "Lesson 3",
-      "content": "Lesson content 3",
-      "order": 3,
-      "resources": [
-        "https://resources.com/res2"
-      ],
-      "duration": 56,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('c74d1bc7-f723-4221-b7e4-751a34962475')",
-      "lessonId": "LSN2D8F9C",
-      "courseId": "CRSA7D874",
-      "title": "Lesson 4",
-      "content": "Lesson content 4",
-      "order": 4,
-      "resources": [
-        "https://resources.com/res3"
-      ],
-      "duration": 16,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('a03ca3d8-8235-4518-a61e-3a121ecd5efc')",
-      "lessonId": "LSN340B97",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 5",
-      "content": "Lesson content 5",
-      "order": 5,
-      "resources": [
-        "https://resources.com/res4"
-      ],
-      "duration": 22,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('47a1696c-8f22-4ed4-8cac-4064076e51ce')",
-      "lessonId": "LSN082356",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 6",
-      "content": "Lesson content 6",
+      "lessonId": "l3",
+      "courseId": "c2",
+      "title": "Python Basics",
+      "content": "Getting started with Python.",
       "order": 1,
-      "resources": [
-        "https://resources.com/res5"
-      ],
-      "duration": 44,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["python_basics.pdf"],
+      "duration": 35,
+      "createdAt": "2024-02-01T09:00:00Z",
+      "updatedAt": "2024-02-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('7f80d565-be75-4c38-a629-b274fdeeca30')",
-      "lessonId": "LSNDF82FC",
-      "courseId": "CRS744E6E",
-      "title": "Lesson 7",
-      "content": "Lesson content 7",
+      "lessonId": "l4",
+      "courseId": "c2",
+      "title": "Python Advanced",
+      "content": "Advanced Python topics.",
       "order": 2,
-      "resources": [
-        "https://resources.com/res6"
-      ],
-      "duration": 18,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('10eb2dd2-44cf-4275-814e-5209e3c9c2f4')",
-      "lessonId": "LSNC989B9",
-      "courseId": "CRSB563BF",
-      "title": "Lesson 8",
-      "content": "Lesson content 8",
-      "order": 3,
-      "resources": [
-        "https://resources.com/res7"
-      ],
-      "duration": 21,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('f9dd1f20-5a8a-4fc8-8f6f-1bc9bcec2901')",
-      "lessonId": "LSN39E458",
-      "courseId": "CRS90C9D7",
-      "title": "Lesson 9",
-      "content": "Lesson content 9",
-      "order": 4,
-      "resources": [
-        "https://resources.com/res8"
-      ],
-      "duration": 39,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('1c3a477d-6641-4da8-935f-9d3794e6ad87')",
-      "lessonId": "LSNE2B9F8",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 10",
-      "content": "Lesson content 10",
-      "order": 5,
-      "resources": [
-        "https://resources.com/res9"
-      ],
-      "duration": 14,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('35b79a06-9c08-4ce0-95ad-080aa25c8c6f')",
-      "lessonId": "LSNC5F5DC",
-      "courseId": "CRS744E6E",
-      "title": "Lesson 11",
-      "content": "Lesson content 11",
-      "order": 1,
-      "resources": [
-        "https://resources.com/res10"
-      ],
+      "resources": ["python_advanced.pdf"],
       "duration": 45,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "createdAt": "2024-02-03T09:00:00Z",
+      "updatedAt": "2024-02-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('172aaf9c-c3fe-457a-8cd4-b11c60f24da6')",
-      "lessonId": "LSN01A2DF",
-      "courseId": "CRSD8FABE",
-      "title": "Lesson 12",
-      "content": "Lesson content 12",
-      "order": 2,
-      "resources": [
-        "https://resources.com/res11"
-      ],
-      "duration": 13,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('cf8541a0-f41b-4039-9acf-16a4a50cb2bf')",
-      "lessonId": "LSN042CC8",
-      "courseId": "CRSCC42A9",
-      "title": "Lesson 13",
-      "content": "Lesson content 13",
-      "order": 3,
-      "resources": [
-        "https://resources.com/res12"
-      ],
-      "duration": 15,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('4debbf63-8318-4474-b3f7-ccbf95658431')",
-      "lessonId": "LSNBC9F7F",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 14",
-      "content": "Lesson content 14",
-      "order": 4,
-      "resources": [
-        "https://resources.com/res13"
-      ],
-      "duration": 20,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('98c5d887-71b4-4a46-bb25-81c67863651b')",
-      "lessonId": "LSN63DC45",
-      "courseId": "CRSB563BF",
-      "title": "Lesson 15",
-      "content": "Lesson content 15",
-      "order": 5,
-      "resources": [
-        "https://resources.com/res14"
-      ],
-      "duration": 41,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('ddc7da3b-7496-4222-b8af-de22a8978277')",
-      "lessonId": "LSNECA6E5",
-      "courseId": "CRS744E6E",
-      "title": "Lesson 16",
-      "content": "Lesson content 16",
+      "lessonId": "l5",
+      "courseId": "c3",
+      "title": "Web Design Intro",
+      "content": "Introduction to web design.",
       "order": 1,
-      "resources": [
-        "https://resources.com/res15"
-      ],
-      "duration": 23,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["web_design_intro.pdf"],
+      "duration": 25,
+      "createdAt": "2024-03-01T09:00:00Z",
+      "updatedAt": "2024-03-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('1c53a3c0-26a6-477e-9ec9-607b94034903')",
-      "lessonId": "LSN2632E8",
-      "courseId": "CRSB563BF",
-      "title": "Lesson 17",
-      "content": "Lesson content 17",
+      "lessonId": "l6",
+      "courseId": "c3",
+      "title": "Color Theory",
+      "content": "Basics of color theory.",
       "order": 2,
-      "resources": [
-        "https://resources.com/res16"
-      ],
-      "duration": 13,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["color_theory.pdf"],
+      "duration": 30,
+      "createdAt": "2024-03-03T09:00:00Z",
+      "updatedAt": "2024-03-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('273d20c8-5ba4-4d18-b53c-845b63292927')",
-      "lessonId": "LSN66EAC8",
-      "courseId": "CRSD7C049",
-      "title": "Lesson 18",
-      "content": "Lesson content 18",
-      "order": 3,
-      "resources": [
-        "https://resources.com/res17"
-      ],
-      "duration": 34,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('3621fd27-eb94-42f0-97c0-af7c2fadfeae')",
-      "lessonId": "LSN546098",
-      "courseId": "CRSCC42A9",
-      "title": "Lesson 19",
-      "content": "Lesson content 19",
-      "order": 4,
-      "resources": [
-        "https://resources.com/res18"
-      ],
-      "duration": 34,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('dccd0d43-4d0f-49fb-bbbc-674c5d816113')",
-      "lessonId": "LSNE1FC06",
-      "courseId": "CRS90C9D7",
-      "title": "Lesson 20",
-      "content": "Lesson content 20",
-      "order": 5,
-      "resources": [
-        "https://resources.com/res19"
-      ],
-      "duration": 60,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
-    },
-    {
-      "_id": "ObjectId('74fe7a23-e3a3-4ae5-af8a-0dcefe03a044')",
-      "lessonId": "LSN3CBA06",
-      "courseId": "CRS744E6E",
-      "title": "Lesson 21",
-      "content": "Lesson content 21",
+      "lessonId": "l7",
+      "courseId": "c4",
+      "title": "DB Concepts",
+      "content": "Database concepts.",
       "order": 1,
-      "resources": [
-        "https://resources.com/res20"
-      ],
-      "duration": 28,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["db_concepts.pdf"],
+      "duration": 40,
+      "createdAt": "2024-04-01T09:00:00Z",
+      "updatedAt": "2024-04-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('38f3cdc0-0dac-48b8-a32b-28032f6cdef5')",
-      "lessonId": "LSN8D83EE",
-      "courseId": "CRSB563BF",
-      "title": "Lesson 22",
-      "content": "Lesson content 22",
+      "lessonId": "l8",
+      "courseId": "c4",
+      "title": "SQL Basics",
+      "content": "Introduction to SQL.",
       "order": 2,
-      "resources": [
-        "https://resources.com/res21"
-      ],
-      "duration": 54,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "resources": ["sql_basics.pdf"],
+      "duration": 50,
+      "createdAt": "2024-04-03T09:00:00Z",
+      "updatedAt": "2024-04-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('123faf34-8423-45a3-997d-c66abfde6258')",
-      "lessonId": "LSN0175DE",
-      "courseId": "CRS744E6E",
-      "title": "Lesson 23",
-      "content": "Lesson content 23",
-      "order": 3,
-      "resources": [
-        "https://resources.com/res22"
-      ],
-      "duration": 19,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "lessonId": "l9",
+      "courseId": "c5",
+      "title": "Cloud Overview",
+      "content": "Overview of cloud computing.",
+      "order": 1,
+      "resources": ["cloud_overview.pdf"],
+      "duration": 30,
+      "createdAt": "2024-05-01T09:00:00Z",
+      "updatedAt": "2024-05-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('946243b4-945d-42e0-b11b-54b10cc47403')",
-      "lessonId": "LSN8A26E8",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 24",
-      "content": "Lesson content 24",
-      "order": 4,
-      "resources": [
-        "https://resources.com/res23"
-      ],
+      "lessonId": "l10",
+      "courseId": "c5",
+      "title": "AWS Basics",
+      "content": "Getting started with AWS.",
+      "order": 2,
+      "resources": ["aws_basics.pdf"],
+      "duration": 35,
+      "createdAt": "2024-05-03T09:00:00Z",
+      "updatedAt": "2024-05-04T09:00:00Z"
+    },
+    {
+      "lessonId": "l11",
+      "courseId": "c6",
+      "title": "Mobile Intro",
+      "content": "Introduction to mobile apps.",
+      "order": 1,
+      "resources": ["mobile_intro.pdf"],
       "duration": 28,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "createdAt": "2024-06-01T09:00:00Z",
+      "updatedAt": "2024-06-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('f422fa82-0cf1-470e-b33f-216cc916b26b')",
-      "lessonId": "LSN51004D",
-      "courseId": "CRS064F7B",
-      "title": "Lesson 25",
-      "content": "Lesson content 25",
-      "order": 5,
-      "resources": [
-        "https://resources.com/res24"
-      ],
-      "duration": 13,
-      "createdAt": "2024-04-01T00:00:00",
-      "updatedAt": "2024-04-10T00:00:00"
+      "lessonId": "l12",
+      "courseId": "c6",
+      "title": "Flutter Basics",
+      "content": "Getting started with Flutter.",
+      "order": 2,
+      "resources": ["flutter_basics.pdf"],
+      "duration": 32,
+      "createdAt": "2024-06-03T09:00:00Z",
+      "updatedAt": "2024-06-04T09:00:00Z"
+    },
+    {
+      "lessonId": "l13",
+      "courseId": "c7",
+      "title": "DevOps Intro",
+      "content": "Introduction to DevOps.",
+      "order": 1,
+      "resources": ["devops_intro.pdf"],
+      "duration": 36,
+      "createdAt": "2024-07-01T09:00:00Z",
+      "updatedAt": "2024-07-02T09:00:00Z"
+    },
+    {
+      "lessonId": "l14",
+      "courseId": "c7",
+      "title": "Docker Basics",
+      "content": "Getting started with Docker.",
+      "order": 2,
+      "resources": ["docker_basics.pdf"],
+      "duration": 38,
+      "createdAt": "2024-07-03T09:00:00Z",
+      "updatedAt": "2024-07-04T09:00:00Z"
+    },
+    {
+      "lessonId": "l15",
+      "courseId": "c8",
+      "title": "Cybersecurity Intro",
+      "content": "Introduction to cybersecurity.",
+      "order": 1,
+      "resources": ["cybersecurity_intro.pdf"],
+      "duration": 29,
+      "createdAt": "2024-08-01T09:00:00Z",
+      "updatedAt": "2024-08-02T09:00:00Z"
     }
   ],
   "assignments": [
     {
-      "_id": "ObjectId('af817aa4-261e-4e7b-8fbd-50d42aa6656e')",
-      "assignmentId": "ASM3AE774",
-      "courseId": "CRSCC42A9",
-      "lessonId": "LSN8A26E8",
-      "title": "Assignment 1",
-      "instructions": "Complete assignment 1",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a1",
+      "courseId": "c1",
+      "lessonId": "l1",
+      "title": "JS Quiz 1",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-01-15T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-01-01T09:00:00Z",
+      "updatedAt": "2024-01-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('3fc5649f-88c5-4ab2-a812-b673743f675c')",
-      "assignmentId": "ASM7CC0EF",
-      "courseId": "CRSA7D874",
-      "lessonId": "LSNDF6887",
-      "title": "Assignment 2",
-      "instructions": "Complete assignment 2",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a2",
+      "courseId": "c1",
+      "lessonId": "l2",
+      "title": "JS Variables Assignment",
+      "instructions": "Submit variable exercises.",
+      "dueDate": "2024-01-20T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-01-03T09:00:00Z",
+      "updatedAt": "2024-01-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('70267877-321c-41ee-a2c8-620f8696ea96')",
-      "assignmentId": "ASM809A3F",
-      "courseId": "CRSCC42A9",
-      "lessonId": "LSN546098",
-      "title": "Assignment 3",
-      "instructions": "Complete assignment 3",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a3",
+      "courseId": "c2",
+      "lessonId": "l3",
+      "title": "Python Basics Quiz",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-02-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-02-01T09:00:00Z",
+      "updatedAt": "2024-02-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('f66f2a7e-2464-42d1-abde-ae5532edab18')",
-      "assignmentId": "ASM933952",
-      "courseId": "CRS744E6E",
-      "lessonId": "LSN2632E8",
-      "title": "Assignment 4",
-      "instructions": "Complete assignment 4",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a4",
+      "courseId": "c2",
+      "lessonId": "l4",
+      "title": "Python Advanced Assignment",
+      "instructions": "Submit advanced exercises.",
+      "dueDate": "2024-02-10T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-02-03T09:00:00Z",
+      "updatedAt": "2024-02-04T09:00:00Z"
     },
     {
-      "_id": "ObjectId('25bb3663-6ce7-4261-b160-0a33c64833c4')",
-      "assignmentId": "ASMCBCA3C",
-      "courseId": "CRSD7C049",
-      "lessonId": "LSNDF6887",
-      "title": "Assignment 5",
-      "instructions": "Complete assignment 5",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a5",
+      "courseId": "c3",
+      "lessonId": "l5",
+      "title": "Web Design Quiz",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-03-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-03-01T09:00:00Z",
+      "updatedAt": "2024-03-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('34fbce1d-61c8-4e53-85d3-8b914842aabb')",
-      "assignmentId": "ASM2CA6ED",
-      "courseId": "CRSD8FABE",
-      "lessonId": "LSN082356",
-      "title": "Assignment 6",
-      "instructions": "Complete assignment 6",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a6",
+      "courseId": "c4",
+      "lessonId": "l7",
+      "title": "DB Concepts Assignment",
+      "instructions": "Submit DB concepts exercises.",
+      "dueDate": "2024-04-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-04-01T09:00:00Z",
+      "updatedAt": "2024-04-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('616fe346-8b57-48e2-8270-c66c771a833b')",
-      "assignmentId": "ASM9BFA81",
-      "courseId": "CRSD8FABE",
-      "lessonId": "LSNE1FC06",
-      "title": "Assignment 7",
-      "instructions": "Complete assignment 7",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a7",
+      "courseId": "c5",
+      "lessonId": "l9",
+      "title": "Cloud Overview Quiz",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-05-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-05-01T09:00:00Z",
+      "updatedAt": "2024-05-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('707b5784-5c3c-41c9-9ef0-859f394be65e')",
-      "assignmentId": "ASMB3F26F",
-      "courseId": "CRSD8FABE",
-      "lessonId": "LSN8D83EE",
-      "title": "Assignment 8",
-      "instructions": "Complete assignment 8",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a8",
+      "courseId": "c6",
+      "lessonId": "l11",
+      "title": "Mobile Intro Assignment",
+      "instructions": "Submit mobile intro exercises.",
+      "dueDate": "2024-06-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-06-01T09:00:00Z",
+      "updatedAt": "2024-06-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('7762eb13-b854-41ea-b101-1ac7e812c568')",
-      "assignmentId": "ASMAEAC94",
-      "courseId": "CRS064F7B",
-      "lessonId": "LSN042CC8",
-      "title": "Assignment 9",
-      "instructions": "Complete assignment 9",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a9",
+      "courseId": "c7",
+      "lessonId": "l13",
+      "title": "DevOps Quiz",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-07-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-07-01T09:00:00Z",
+      "updatedAt": "2024-07-02T09:00:00Z"
     },
     {
-      "_id": "ObjectId('581ba320-110a-4f09-ae21-f75fb4f37e4b')",
-      "assignmentId": "ASMCD733E",
-      "courseId": "CRSD8FABE",
-      "lessonId": "LSN546098",
-      "title": "Assignment 10",
-      "instructions": "Complete assignment 10",
-      "dueDate": "2024-05-01T00:00:00",
+      "assignmentId": "a10",
+      "courseId": "c8",
+      "lessonId": "l15",
+      "title": "Cybersecurity Quiz",
+      "instructions": "Complete the quiz.",
+      "dueDate": "2024-08-05T09:00:00Z",
       "maxScore": 100,
-      "createdAt": "2024-04-20T00:00:00",
-      "updatedAt": "2024-04-25T00:00:00"
+      "createdAt": "2024-08-01T09:00:00Z",
+      "updatedAt": "2024-08-02T09:00:00Z"
     }
   ],
   "submissions": [
     {
-      "_id": "ObjectId('2cddafce-22d4-4936-94d8-a97d9261fe9d')",
-      "submissionId": "SUB83D9F6",
-      "assignmentId": "ASMCD733E",
-      "studentId": "USR612BD6",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 1",
-      "grade": 52,
-      "feedback": "Feedback for submission 1",
-      "gradedBy": "USRB79912",
-      "gradedAt": "2024-05-03T00:00:00"
+      "submissionId": "s1",
+      "assignmentId": "a1",
+      "studentId": "u1",
+      "submissionDate": "2024-01-14T09:00:00Z",
+      "content": "My JS quiz answers.",
+      "grade": 95,
+      "feedback": "Great job!",
+      "gradedBy": "u2",
+      "gradedAt": "2024-01-15T09:00:00Z"
     },
     {
-      "_id": "ObjectId('60d81758-274b-46dd-a0c8-195dfa6c5695')",
-      "submissionId": "SUB50A7CE",
-      "assignmentId": "ASM7CC0EF",
-      "studentId": "USRF5A4CA",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 2",
+      "submissionId": "s2",
+      "assignmentId": "a2",
+      "studentId": "u3",
+      "submissionDate": "2024-01-19T09:00:00Z",
+      "content": "Variable exercises.",
+      "grade": 88,
+      "feedback": "Well done.",
+      "gradedBy": "u2",
+      "gradedAt": "2024-01-20T09:00:00Z"
+    },
+    {
+      "submissionId": "s3",
+      "assignmentId": "a3",
+      "studentId": "u5",
+      "submissionDate": "2024-02-04T09:00:00Z",
+      "content": "Python quiz answers.",
       "grade": 92,
-      "feedback": "Feedback for submission 2",
-      "gradedBy": "USR18EFA8",
-      "gradedAt": "2024-05-03T00:00:00"
+      "feedback": "Excellent.",
+      "gradedBy": "u8",
+      "gradedAt": "2024-02-05T09:00:00Z"
     },
     {
-      "_id": "ObjectId('2d022386-1e42-4d60-a8ba-280b038f11a7')",
-      "submissionId": "SUB85C8CF",
-      "assignmentId": "ASMCD733E",
-      "studentId": "USRF5A4CA",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 3",
-      "grade": 70,
-      "feedback": "Feedback for submission 3",
-      "gradedBy": "USRB79912",
-      "gradedAt": "2024-05-03T00:00:00"
+      "submissionId": "s4",
+      "assignmentId": "a4",
+      "studentId": "u7",
+      "submissionDate": "2024-02-09T09:00:00Z",
+      "content": "Advanced Python exercises.",
+      "grade": 85,
+      "feedback": "Good effort.",
+      "gradedBy": "u8",
+      "gradedAt": "2024-02-10T09:00:00Z"
     },
     {
-      "_id": "ObjectId('0262c54d-d21d-47ce-96db-2368d9d4b413')",
-      "submissionId": "SUB5DAE7F",
-      "assignmentId": "ASMCBCA3C",
-      "studentId": "USRCD5073",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 4",
-      "grade": 92,
-      "feedback": "Feedback for submission 4",
-      "gradedBy": "USRA9DEAD",
-      "gradedAt": "2024-05-03T00:00:00"
+      "submissionId": "s5",
+      "assignmentId": "a5",
+      "studentId": "u9",
+      "submissionDate": "2024-03-04T09:00:00Z",
+      "content": "Web design quiz answers.",
+      "grade": 90,
+      "feedback": "Nice work.",
+      "gradedBy": "u14",
+      "gradedAt": "2024-03-05T09:00:00Z"
     },
     {
-      "_id": "ObjectId('f9a17ed2-1a4c-4d29-82ac-dc99ef4ab7e1')",
-      "submissionId": "SUB24FE0F",
-      "assignmentId": "ASM2CA6ED",
-      "studentId": "USR48237A",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 5",
-      "grade": 66,
-      "feedback": "Feedback for submission 5",
-      "gradedBy": "USRA9DEAD",
-      "gradedAt": "2024-05-03T00:00:00"
+      "submissionId": "s6",
+      "assignmentId": "a6",
+      "studentId": "u11",
+      "submissionDate": "2024-04-04T09:00:00Z",
+      "content": "DB concepts exercises.",
+      "grade": 87,
+      "feedback": "Solid understanding.",
+      "gradedBy": "u10",
+      "gradedAt": "2024-04-05T09:00:00Z"
     },
     {
-      "_id": "ObjectId('39e77186-33a0-43a8-bc60-53d2097a379f')",
-      "submissionId": "SUBAE011C",
-      "assignmentId": "ASM809A3F",
-      "studentId": "USR6DDD02",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 6",
-      "grade": 79,
-      "feedback": "Feedback for submission 6",
-      "gradedBy": "USR8D9638",
-      "gradedAt": "2024-05-03T00:00:00"
+      "submissionId": "s7",
+      "assignmentId": "a7",
+      "studentId": "u13",
+      "submissionDate": "2024-05-04T09:00:00Z",
+      "content": "Cloud quiz answers.",
+      "grade": 93,
+      "feedback": "Excellent.",
+      "gradedBy": "u16",
+      "gradedAt": "2024-05-05T09:00:00Z"
     },
     {
-      "_id": "ObjectId('1d8659ec-e597-4cba-a7bf-71aa56beabe7')",
-      "submissionId": "SUB1AA7F8",
-      "assignmentId": "ASM7CC0EF",
-      "studentId": "USR7646E9",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 7",
-      "grade": 79,
-      "feedback": "Feedback for submission 7",
-      "gradedBy": "USR60F95B",
-      "gradedAt": "2024-05-03T00:00:00"
-    },
-    {
-      "_id": "ObjectId('0231f7a1-95cd-418c-89b8-f852b8ccbe68')",
-      "submissionId": "SUB05B7A9",
-      "assignmentId": "ASMCD733E",
-      "studentId": "USRF5A4CA",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 8",
-      "grade": 54,
-      "feedback": "Feedback for submission 8",
-      "gradedBy": "USR60F95B",
-      "gradedAt": "2024-05-03T00:00:00"
-    },
-    {
-      "_id": "ObjectId('f995ea56-4b46-4974-b9a4-b74179611c03')",
-      "submissionId": "SUB1E4EDB",
-      "assignmentId": "ASM933952",
-      "studentId": "USRA5EDF9",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 9",
-      "grade": 66,
-      "feedback": "Feedback for submission 9",
-      "gradedBy": "USRB79912",
-      "gradedAt": "2024-05-03T00:00:00"
-    },
-    {
-      "_id": "ObjectId('101d8084-3ed6-40a6-ac35-23e9524edac1')",
-      "submissionId": "SUB65C60D",
-      "assignmentId": "ASM2CA6ED",
-      "studentId": "USRB250D0",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 10",
-      "grade": 65,
-      "feedback": "Feedback for submission 10",
-      "gradedBy": "USR60F95B",
-      "gradedAt": "2024-05-03T00:00:00"
-    },
-    {
-      "_id": "ObjectId('3fc9322e-94d6-4b79-95ac-c7f8ba0f0932')",
-      "submissionId": "SUB96A2B6",
-      "assignmentId": "ASMCBCA3C",
-      "studentId": "USR7646E9",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 11",
-      "grade": 78,
-      "feedback": "Feedback for submission 11",
-      "gradedBy": "USRA9DEAD",
-      "gradedAt": "2024-05-03T00:00:00"
-    },
-    {
-      "_id": "ObjectId('2336567f-51ee-4c5f-836a-10c539e83921')",
-      "submissionId": "SUB427242",
-      "assignmentId": "ASMAEAC94",
-      "studentId": "USRABC128",
-      "submissionDate": "2024-05-02T00:00:00",
-      "content": "Submission content 12",
+      "submissionId": "s8",
+      "assignmentId": "a8",
+      "studentId": "u15",
+      "submissionDate": "2024-06-04T09:00:00Z",
+      "content": "Mobile intro exercises.",
       "grade": 89,
-      "feedback": "Feedback for submission 12",
-      "gradedBy": "USR8D9638",
-      "gradedAt": "2024-05-03T00:00:00"
+      "feedback": "Good job.",
+      "gradedBy": "u18",
+      "gradedAt": "2024-06-05T09:00:00Z"
+    },
+    {
+      "submissionId": "s9",
+      "assignmentId": "a9",
+      "studentId": "u17",
+      "submissionDate": "2024-07-04T09:00:00Z",
+      "content": "DevOps quiz answers.",
+      "grade": 91,
+      "feedback": "Very good.",
+      "gradedBy": "u6",
+      "gradedAt": "2024-07-05T09:00:00Z"
+    },
+    {
+      "submissionId": "s10",
+      "assignmentId": "a10",
+      "studentId": "u19",
+      "submissionDate": "2024-08-04T09:00:00Z",
+      "content": "Cybersecurity quiz answers.",
+      "grade": 94,
+      "feedback": "Excellent.",
+      "gradedBy": "u12",
+      "gradedAt": "2024-08-05T09:00:00Z"
+    },
+    {
+      "submissionId": "s11",
+      "assignmentId": "a1",
+      "studentId": "u3",
+      "submissionDate": "2024-01-14T10:00:00Z",
+      "content": "JS quiz answers.",
+      "grade": 80,
+      "feedback": "Good.",
+      "gradedBy": "u2",
+      "gradedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "submissionId": "s12",
+      "assignmentId": "a2",
+      "studentId": "u5",
+      "submissionDate": "2024-01-19T10:00:00Z",
+      "content": "Variable exercises.",
+      "grade": 85,
+      "feedback": "Nice.",
+      "gradedBy": "u2",
+      "gradedAt": "2024-01-20T10:00:00Z"
     }
   ]
 }

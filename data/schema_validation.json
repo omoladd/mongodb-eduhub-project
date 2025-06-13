@@ -1,0 +1,287 @@
+{
+  "users": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["userId", "email", "firstName", "lastName", "role"],
+      "properties": {
+        "userId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "email": {
+          "bsonType": "string",
+          "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+          "description": "must be a valid email address"
+        },
+        "firstName": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "lastName": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "role": {
+          "enum": ["student", "instructor"],
+          "description": "must be either student or instructor"
+        },
+        "dateJoined": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "profile": {
+          "bsonType": "object",
+          "properties": {
+            "bio": { "bsonType": "string" },
+            "avatar": { "bsonType": "string" },
+            "skills": {
+              "bsonType": "array",
+              "items": { "bsonType": "string" }
+            }
+          }
+        },
+        "isActive": {
+          "bsonType": "bool",
+          "description": "must be a boolean"
+        }
+      }
+    }
+  },
+  "courses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["courseId", "title", "instructorId"],
+      "properties": {
+        "courseId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "title": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "description": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "instructorId": {
+          "bsonType": "string",
+          "description": "must be a string referencing users.userId"
+        },
+        "category": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "level": {
+          "enum": ["beginner", "intermediate", "advanced"],
+          "description": "must be beginner, intermediate, or advanced"
+        },
+        "duration": {
+          "bsonType": "number",
+          "minimum": 0,
+          "description": "must be a positive number (hours)"
+        },
+        "price": {
+          "bsonType": "number",
+          "minimum": 0,
+          "description": "must be a positive number"
+        },
+        "tags": {
+          "bsonType": "array",
+          "items": { "bsonType": "string" }
+        },
+        "createdAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "updatedAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "isPublished": {
+          "bsonType": "bool",
+          "description": "must be a boolean"
+        }
+      }
+    }
+  },
+  "lessons": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["lessonId", "courseId", "title", "order"],
+      "properties": {
+        "lessonId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "courseId": {
+          "bsonType": "string",
+          "description": "must be a string referencing courses.courseId"
+        },
+        "title": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "content": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "order": {
+          "bsonType": "number",
+          "minimum": 1,
+          "description": "must be a positive number"
+        },
+        "resources": {
+          "bsonType": "array",
+          "items": { "bsonType": "string" }
+        },
+        "duration": {
+          "bsonType": "number",
+          "minimum": 0,
+          "description": "must be a positive number (minutes)"
+        },
+        "createdAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "updatedAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        }
+      }
+    }
+  },
+  "assignments": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["assignmentId", "courseId", "title"],
+      "properties": {
+        "assignmentId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "courseId": {
+          "bsonType": "string",
+          "description": "must be a string referencing courses.courseId"
+        },
+        "lessonId": {
+          "bsonType": "string",
+          "description": "must be a string referencing lessons.lessonId"
+        },
+        "title": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "instructions": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "dueDate": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "maxScore": {
+          "bsonType": "number",
+          "minimum": 0,
+          "description": "must be a positive number"
+        },
+        "createdAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "updatedAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        }
+      }
+    }
+  },
+  "enrollments": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["enrollmentId", "studentId", "courseId", "enrollmentDate"],
+      "properties": {
+        "enrollmentId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "studentId": {
+          "bsonType": "string",
+          "description": "must be a string referencing users.userId"
+        },
+        "courseId": {
+          "bsonType": "string",
+          "description": "must be a string referencing courses.courseId"
+        },
+        "enrollmentDate": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "progress": {
+          "bsonType": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "must be a number between 0.0 and 1.0"
+        },
+        "completed": {
+          "bsonType": "bool",
+          "description": "must be a boolean"
+        },
+        "certificateIssued": {
+          "bsonType": "bool",
+          "description": "must be a boolean"
+        }
+      }
+    }
+  },
+  "submissions": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "submissionId",
+        "assignmentId",
+        "studentId",
+        "submissionDate"
+      ],
+      "properties": {
+        "submissionId": {
+          "bsonType": "string",
+          "description": "must be a unique string"
+        },
+        "assignmentId": {
+          "bsonType": "string",
+          "description": "must be a string referencing assignments.assignmentId"
+        },
+        "studentId": {
+          "bsonType": "string",
+          "description": "must be a string referencing users.userId"
+        },
+        "submissionDate": {
+          "bsonType": "date",
+          "description": "must be a date"
+        },
+        "content": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "grade": {
+          "bsonType": "number",
+          "minimum": 0,
+          "description": "must be a positive number"
+        },
+        "feedback": {
+          "bsonType": "string",
+          "description": "must be a string"
+        },
+        "gradedBy": {
+          "bsonType": "string",
+          "description": "must be a string referencing users.userId"
+        },
+        "gradedAt": {
+          "bsonType": "date",
+          "description": "must be a date"
+        }
+      }
+    }
+  }
+}
