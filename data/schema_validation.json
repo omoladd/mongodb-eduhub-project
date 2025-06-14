@@ -101,6 +101,12 @@
         "isPublished": {
           "bsonType": "bool",
           "description": "must be a boolean"
+        },
+        "rating": {
+          "bsonType": "number",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "must be a number between 1 and 5"
         }
       }
     }
