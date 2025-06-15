@@ -31,16 +31,6 @@ class EdHubDB:
         self.submissions_col = self.db["submissions"]
 
     # Part 1
-    def load_schemas(self):
-        """Load validation schemas from JSON file"""
-        try:
-            with open(self.schemas_path, "r") as f:
-                schemas = json.load(f)
-            return schemas
-        except FileNotFoundError:
-            raise FileNotFoundError(f"Schema file not found: {self.schemas_path}")
-        except json.JSONDecodeError:
-            raise ValueError(f"Invalid JSON in schema file: {self.schemas_path}")
 
     def build_collection(self):
         """Setup collections and validations from JSON files"""
@@ -420,3 +410,369 @@ class EdHubDB:
         except Exception as e:
             print(f"Error grouping courses by category: {e}")
             return []
+
+    # here
+    def average_grade_per_student(self):
+        """Aggregation: Average grade per student"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$studentId",
+                        "averageGrade": {"$avg": "$grade"},
+                        "submissions": {"$sum": 1},
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "student",
+                    }
+                },
+                {"$unwind": "$student"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "studentId": "$_id",
+                        "studentName": {
+                            "$concat": ["$student.firstName", " ", "$student.lastName"]
+                        },
+                        "averageGrade": 1,
+                        "submissions": 1,
+                    }
+                },
+            ]
+            result = list(self.submissions_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating average grade per student: {e}")
+            return []
+
+    def course_completion_rate(self):
+        """Aggregation: Completion rate by course"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$courseId",
+                        "total": {"$sum": 1},
+                        "completed": {"$sum": {"$cond": ["$completed", 1, 0]}},
+                    }
+                },
+                {
+                    "$project": {
+                        "_id": 0,
+                        "courseId": "$_id",
+                        "completionRate": {
+                            "$cond": [
+                                {"$eq": ["$total", 0]},
+                                0,
+                                {"$divide": ["$completed", "$total"]},
+                            ]
+                        },
+                        "totalEnrolled": "$total",
+                    }
+                },
+            ]
+            result = list(self.enrollments_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating course completion rate: {e}")
+            return []
+
+    def top_performing_students(self, limit=5):
+        """Aggregation: Top-performing students by average grade"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$studentId",
+                        "averageGrade": {"$avg": "$grade"},
+                        "submissions": {"$sum": 1},
+                    }
+                },
+                {"$sort": {"averageGrade": -1}},
+                {"$limit": limit},
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "student",
+                    }
+                },
+                {"$unwind": "$student"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "studentId": "$_id",
+                        "studentName": {
+                            "$concat": ["$student.firstName", " ", "$student.lastName"]
+                        },
+                        "averageGrade": 1,
+                        "submissions": 1,
+                    }
+                },
+            ]
+            result = list(self.submissions_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error fetching top-performing students: {e}")
+            return []
+
+    def total_student_by_each_instructor(self):
+        """Aggregation: Total students taught by each instructor"""
+        try:
+            pipeline = [
+                {
+                    "$lookup": {
+                        "from": "courses",
+                        "localField": "courseId",
+                        "foreignField": "courseId",
+                        "as": "course",
+                    }
+                },
+                {"$unwind": "$course"},
+                {
+                    "$group": {
+                        "_id": "$course.instructorId",
+                        "students": {"$addToSet": "$studentId"},
+                        "coursesTaught": {"$addToSet": "$course.courseId"},
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "instructor",
+                    }
+                },
+                {"$unwind": "$instructor"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "instructorId": "$_id",
+                        "instructorName": {
+                            "$concat": [
+                                "$instructor.firstName",
+                                " ",
+                                "$instructor.lastName",
+                            ]
+                        },
+                        "totalStudents": {"$size": "$students"},
+                        "coursesTaught": 1,
+                    }
+                },
+            ]
+            result = list(self.enrollments_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating total students by instructor: {e}")
+            return []
+
+    def average_course_rating_per_instructor(self):
+        """Aggregation: Average course rating per instructor"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$instructorId",
+                        "averageRating": {"$avg": "$rating"},
+                        "courses": {"$push": "$title"},
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "instructor",
+                    }
+                },
+                {"$unwind": "$instructor"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "instructorId": "$_id",
+                        "instructorName": {
+                            "$concat": [
+                                "$instructor.firstName",
+                                " ",
+                                "$instructor.lastName",
+                            ]
+                        },
+                        "averageRating": 1,
+                        "courses": 1,
+                    }
+                },
+            ]
+            result = list(self.courses_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating average course rating per instructor: {e}")
+            return []
+
+    def revenue_per_instructor(self):
+        """Aggregation: Revenue generated per instructor"""
+        try:
+            pipeline = [
+                {
+                    "$lookup": {
+                        "from": "courses",
+                        "localField": "courseId",
+                        "foreignField": "courseId",
+                        "as": "course",
+                    }
+                },
+                {"$unwind": "$course"},
+                {
+                    "$group": {
+                        "_id": "$course.instructorId",
+                        "revenue": {"$sum": "$course.price"},
+                        "courses": {"$addToSet": "$course.courseId"},
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "instructor",
+                    }
+                },
+                {"$unwind": "$instructor"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "instructorId": "$_id",
+                        "instructorName": {
+                            "$concat": [
+                                "$instructor.firstName",
+                                " ",
+                                "$instructor.lastName",
+                            ]
+                        },
+                        "revenue": 1,
+                        "courses": 1,
+                    }
+                },
+            ]
+            result = list(self.enrollments_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating revenue per instructor: {e}")
+            return []
+
+    def montly_enrollment_trend(self):
+        """Aggregation: Monthly enrollment trends"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": {
+                            "year": {"$year": "$enrollmentDate"},
+                            "month": {"$month": "$enrollmentDate"},
+                        },
+                        "totalEnrollments": {"$sum": 1},
+                    }
+                },
+                {"$sort": {"_id.year": 1, "_id.month": 1}},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "year": "$_id.year",
+                        "month": "$_id.month",
+                        "totalEnrollments": 1,
+                    }
+                },
+            ]
+            result = list(self.enrollments_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating monthly enrollment trends: {e}")
+            return []
+
+    def most_popular_course_categories(self, limit=5):
+        """Aggregation: Most popular course categories"""
+        try:
+            pipeline = [
+                {"$group": {"_id": "$category", "totalCourses": {"$sum": 1}}},
+                {"$sort": {"totalCourses": -1}},
+                {"$limit": limit},
+                {"$project": {"_id": 0, "category": "$_id", "totalCourses": 1}},
+            ]
+            result = list(self.courses_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating most popular course categories: {e}")
+            return []
+
+    def student_engagement_metrics(self):
+        """Aggregation: Student engagement metrics (e.g., submissions per student)"""
+        try:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$studentId",
+                        "totalSubmissions": {"$sum": 1},
+                        "averageGrade": {"$avg": "$grade"},
+                    }
+                },
+                {
+                    "$lookup": {
+                        "from": "users",
+                        "localField": "_id",
+                        "foreignField": "userId",
+                        "as": "student",
+                    }
+                },
+                {"$unwind": "$student"},
+                {
+                    "$project": {
+                        "_id": 0,
+                        "studentId": "$_id",
+                        "studentName": {
+                            "$concat": ["$student.firstName", " ", "$student.lastName"]
+                        },
+                        "totalSubmissions": 1,
+                        "averageGrade": 1,
+                    }
+                },
+            ]
+            result = list(self.submissions_col.aggregate(pipeline))
+            return result
+        except Exception as e:
+            print(f"Error calculating student engagement metrics: {e}")
+            return []
+
+    def setup_index(self):
+        """Create indexes for efficient queries"""
+        try:
+            # User email lookup (unique)
+            self.users_col.create_index("email", unique=True)
+            # Course search by title (text) and category
+            self.courses_col.create_index([("title", "text")])
+            self.courses_col.create_index("category")
+            # Assignment queries by due date
+            self.assignments_col.create_index("dueDate")
+            # Enrollment queries by student and course
+            self.enrollments_col.create_index("studentId")
+            self.enrollments_col.create_index("courseId")
+            print("Indexes created successfully.")
+        except Exception as e:
+            print(f"Error setting up indexes: {e}")
+
+    # Part 6
+    def load_schemas(self):
+        """Load validation schemas from JSON file"""
+        try:
+            with open(self.schemas_path, "r") as f:
+                schemas = json.load(f)
+            return schemas
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Schema file not found: {self.schemas_path}")
+        except json.JSONDecodeError:
+            raise ValueError(f"Invalid JSON in schema file: {self.schemas_path}")
